@@ -210,7 +210,7 @@ export function AIChat() {
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && !e.shiftKey && handleSendMessage()}
               placeholder="Pergunte sobre moda, tendências, dicas de estilo..."
-              className="pl-4 pr-12 py-3 rounded-xl border-border/50 focus:border-primary bg-white"
+              className="pl-4 pr-12 py-3 rounded-xl border-border/50 focus:border-primary bg-black"
               disabled={isLoading}
             />
             <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
