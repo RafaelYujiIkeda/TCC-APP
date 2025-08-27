@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import fashionHero from "@/assets/fashion-hero.jpg";
+import { Link } from 'react-router-dom';
 
 export function Home() {
   return (
@@ -21,11 +22,13 @@ export function Home() {
         {/* AI Section */}
         <Card className="p-6 bg-gradient-card shadow-card border-border/50">
           <h3 className="text-xl font-semibold mb-4 text-foreground">Conheça a nossa AI!</h3>
-          <Button 
-            className="bg-gradient-primary hover:bg-gradient-accent text-white font-semibold px-8 py-3 rounded-lg shadow-glow transition-all duration-300 hover:scale-105"
-          >
-            VENHA CONHECER!
-          </Button>
+          <Link to="/ai">
+            <Button
+              className="bg-gradient-primary hover:bg-gradient-accent text-white font-semibold px-8 py-3 rounded-lg shadow-glow transition-all duration-300 hover:scale-105"
+            >
+              VENHA CONHECER!
+            </Button>
+          </Link>
         </Card>
 
         {/* Map Section */}
