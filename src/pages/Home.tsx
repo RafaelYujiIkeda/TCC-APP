@@ -33,14 +33,16 @@ export function Home() {
 
         {/* Map Section */}
         <Card className="p-6 bg-gradient-card shadow-card border-border/50">
-          <h3 className="text-xl font-semibold mb-4 text-foreground">Veja lojas próximas a você!</h3>
-          <Button 
-            variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105"
-          >
-            MAPA
-          </Button>
-        </Card>
+      <h3 className="text-xl font-semibold mb-4 text-foreground">Veja lojas próximas a você!</h3>
+      <Link to="/map">
+        <Button 
+          variant="outline"
+          className="border-primary text-primary hover:bg-primary hover:text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105"
+        >
+          MAPA
+        </Button>
+      </Link>
+    </Card>
 
         {/* Fashion Showcase */}
         <Card className="p-6 bg-gradient-card shadow-card border-border/50 overflow-hidden">
